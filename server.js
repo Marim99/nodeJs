@@ -42,7 +42,10 @@ http
           break;
       }
 
-      fs.appendFileSync("myfile.txt", "" + result + "\n");
+      fs.appendFileSync(
+        "myfile.txt",
+        "opertion is" + operator[1] + " result is  " + result + "\n"
+      );
       res.write(`<h1>${result}</h1>`);
     }
     res.end();
