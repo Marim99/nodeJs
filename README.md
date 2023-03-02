@@ -22,7 +22,7 @@
     this.date = date;
   }
 }
-  ```
+ ```
   - Reservation [addTicket(ticket),getTicket(id),updateTicket(ticket)]
 
 
