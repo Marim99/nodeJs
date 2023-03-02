@@ -5,7 +5,7 @@
 ## Task1
 - modules
   - Ticket
-  ``` http
+  ``` 
   class Ticket {
   id;
   seat_number;
@@ -20,8 +20,8 @@
     this.departure = departure;
     this.arrival = arrival;
     this.date = date;
-  }
-}
+  }}
+
 
  - Reservation [addTicket(ticket),getTicket(id),updateTicket(ticket)]
 
