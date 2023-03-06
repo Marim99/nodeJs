@@ -31,23 +31,22 @@ http
           res.writeHead(200, "Ok", { "content-type": "text/html" });
           res.write(welcomePage);
           break;
-
+        case "/allData.html":
+          res.writeHead(200, "Ok", { "content-type": "text/html" });
+          res.write(allData);
+          break;
         case "/style.css":
           console.log("k");
           res.writeHead(200, "Ok", { "content-type": "text/css" });
           res.write(styleCSS);
-          break;
-        case "/allData.html":
-          res.writeHead(200, "Ok", { "content-type": "text/html" });
-          res.write(allData);
           break;
         case "/fetchData.js":
           res.writeHead(300, "hii", { "content-type": "text/javascript" });
           res.write(scriptFile);
           break;
         case "/serverSide/client.json":
-          res.writeHead(200, "ok", { "content-type": "application/json" });
-          res.write(myJson);
+          res.writeHead(200, "ok", { "set-cookie": "here = 'lala'" });
+          res.end(myJson);
           break;
         case "/favicon.ico":
           res.writeHead(200, "ok", {
@@ -55,9 +54,9 @@ http
           });
           res.write(myIcon);
           break;
-        default:
-          // res.write("<h1>No Page Found</h1>");
-          break;
+        // default:
+        //   // res.write("<h1>No Page Found</h1>");
+        //   break;
       }
       res.end();
     }
