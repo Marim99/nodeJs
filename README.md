@@ -36,7 +36,7 @@
 
 
 ## Day 3
-
+[ ] get
 ```
 app.get("/index.html", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/index.html"));
@@ -59,6 +59,9 @@ app.get("/fetchData.js", (req, res) => {
 app.get("/Server/data.json", (req, res) => {
   res.sendFile(path.join(__dirname + "/data.json"));
 });
+```
+[ ] post
+```
 app.post("/welcome.html", (req, res) => {
   username = req.body["username"];
   number = req.body["number"];
